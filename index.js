@@ -14,23 +14,22 @@ function scuberGreetingForFeet(someNumber){
 
 function ternaryCheckCity(city){
   // Write your code here!
-  if (city==="NYC"){
-    return "Ok, sounds good."
-  }
-  else{
-    return "No go." 
-  }
-
+  return city === `NYC`? "Ok, sounds good.": "No go."
 }
+  
+
 
 function switchOnCharmFromTip(tip){
-  // Write your code here!
-  if(tip==="generous"){
-    return "Thank you so much."}
-    else if (tip==="not as generous"){
-      return 'Thank you.'}
-      else{
-        return "Bye."
-      }
-    
-    }
+switch(tip){
+  case 'generous':
+    return 'Thank you so much.';
+    break;
+    case 'not as generous':
+      return 'Thank you.';
+      break;
+      default: 'if anything else';
+      return 'Bye.'
+}
+}
+
+
